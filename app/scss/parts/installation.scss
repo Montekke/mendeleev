@@ -1,0 +1,139 @@
+.installation {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 120px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(#000, 0.06);
+    bottom: 0;
+  }
+
+  h2 {
+    font-weight: 400;
+    position: relative;
+
+    .line {
+      position: absolute;
+      bottom: -30px;
+      right: 49px;
+      z-index: -1;
+    }
+  }
+
+  &-block {
+    padding-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-block__image {
+    margin-left: -40px;
+  }
+
+  &-block__advantage {
+    li {
+      align-items: center;
+      margin-left: -10px;
+      line-height: 26px;
+      position: relative;
+
+      &:nth-child(2) {
+        margin-top: 138px;
+        margin-bottom: 132px;
+        margin-left: 60px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        box-shadow: 0 20px 40px rgba(0, 166, 157, 0.2);
+        background-color: #00beb4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: -88px;
+        top: -10px;
+      }
+
+      &:nth-child(1):before {
+        background-image: url('../img/installation/01.png');
+      }
+
+      &:nth-child(2):before {
+        background-image: url('../img/installation/02.png');
+      }
+
+      &:nth-child(3):before {
+        background-image: url('../img/installation/03.png');
+      }
+    }
+  }
+
+  @include _1400 {
+    &-block {
+      &__advantage {
+        li {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @include _1200 {
+    &-block {
+      flex-direction: column-reverse;
+
+      &__advantage {
+        margin-bottom: 30px;
+
+        li {
+          margin-left: 80px !important;
+
+          &:before {
+            top: -20px;
+          }
+
+          &:nth-child(2) {
+            margin-top: 60px;
+            margin-bottom: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  @include _992 {
+    .line {
+      display: none;
+    }
+  }
+
+  @include _768 {
+    &-block__image {
+      width: 100%;
+      margin: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @include _460 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}

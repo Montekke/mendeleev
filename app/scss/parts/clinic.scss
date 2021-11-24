@@ -1,0 +1,112 @@
+.clininc {
+  padding-bottom: 120px;
+  padding-top: 110px;
+
+  &-tittle {
+    .line {
+      top: 26px;
+      right: 156px;
+      z-index: -1;
+    }
+  }
+
+  &-subtittle {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-top: 25px;
+  }
+
+  &__pref-block {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      &-tittle {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 400;
+        margin-left: 28px;
+        margin-top: 40px;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+
+      &-subtittle {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        margin-top: 9px;
+      }
+    }
+  }
+
+  @include _1200 {
+    .line {
+      right: 26px;
+    }
+
+    .visible-hand {
+      display: none;
+    }
+
+    &__pref-block-item {
+      width: 32%;
+
+      img {
+        width: 100%;
+      }
+
+      &-tittle {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @include _992 {
+    .visible-hand {
+      display: flex;
+    }
+
+    .line {
+      display: none;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      padding-left: 15px;
+    }
+
+    &__pref-block {
+      overflow-x: scroll;
+      margin-top: 20px;
+
+      &-item {
+        min-width: 351px;
+        margin-right: 20px;
+      }
+    }
+
+    h2 {
+      padding-right: var(--bs-gutter-x, 0.75rem);
+    }
+  }
+
+  @include _460 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include _410 {
+
+
+    &__pref-block-item {
+      min-width: 300px;
+    }
+  }
+}

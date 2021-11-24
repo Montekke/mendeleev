@@ -1,0 +1,88 @@
+.dentists {
+  padding-top: 105px;
+  padding-bottom: 75px;
+
+  h2 {
+    font-weight: 400;
+    position: relative;
+
+    .line {
+      position: absolute;
+      right: 166px;
+      bottom: -28px;
+      z-index: -1;
+    }
+  }
+
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 53px 37px 0px 37px;
+  }
+
+  &-block__item {
+    &-tittle {
+      margin-top: 24px;
+      text-align: center;
+      line-height: 26px;
+    }
+  }
+
+  @include _1200 {
+    &-block {
+      padding: 53px 0 0 0;
+
+      &__item {
+        width: 33%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .visible-hand {
+      display: none;
+    }
+  }
+
+  @include _992 {
+    .visible-hand {
+      display: flex;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      padding-left: 15px;
+    }
+
+    &-block {
+      overflow-x: scroll;
+      padding-top: 20px;
+
+      &__item {
+        width: unset;
+        margin-right: 15px;
+
+        img {
+          width: unset;
+        }
+      }
+    }
+
+    .line {
+      display: none;
+    }
+
+    h2 {
+      padding-right: var(--bs-gutter-x, 0.75rem);
+    }
+  }
+
+  @include _460 {
+    padding-top: 70px;
+  }
+}

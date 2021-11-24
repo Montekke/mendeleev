@@ -1,0 +1,88 @@
+<header class="_position-relative header-tnx">
+  <div class="container _position-relative">
+    <div class="header _d-flex  _justify-content-between">
+      <div class="header__left-block _d-flex">
+        <a class="header__logo">
+          <picture>
+            <source srcset="img/header/logo.webp" type="image/webp">
+            <img src="img/header/logo.png" alt="">
+          </picture>
+          <p>Московский центр имплантации</p>
+        </a>
+        <div class="header__best _d-flex">
+          <picture>
+            <source srcset="img/header/best.webp" type="image/webp">
+            <img src="img/header/best.png" alt="">
+          </picture>
+          <p>Лучшая<br>
+            стоматология<br>
+            России</p>
+        </div>
+        <div class="header__metro _d-flex">
+          <img src="img/header/metro.svg" width="30px" height="36px" alt="">
+          <a class="header__metro-modal show-popup" href="#metro"><span>8 клиник<br>
+              рядом с метро</span></a>
+        </div>
+      </div>
+      <div class="header__right-block _d-flex _align-items-start">
+        <div class="header__phone _d-flex _flex-column">
+          <a href="tel:+74994551627">+7 499 455-16-27</a>
+          <div class="header__phone-online">
+            <div class="pulse"></div>
+            Сейчас работаем
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-block thank-block">
+      <div>
+        <h2 class="thank-block__tittle">
+          Для составления плана лечения<br>
+          стоматологу <strong>необходимо задать вам<br>
+            несколько уточняющих вопросов</strong>
+        </h2>
+        <div class="main-block__call">
+          <div class="thank-block__subtittle">
+            <picture>
+              <source srcset="img/warning.webp" type="image/webp">
+              <img src="img/warning.png" alt="">
+            </picture>
+            <h3>Пожалуйста, проверьте корректность<br>
+              введенного вами номера телефона
+            </h3>
+          </div>
+          <form class="needs-validation" novalidate="" method="POST" action="#" enctype="multipart/form-data"
+            name="addcom10" id="addcom10" onsubmit="return false">
+            <div class="form-in">
+              <input name="from" type="hidden" value="Получите бесплатную консультацию стоматолога + подарок">
+              <div class="form-block-input form-in-input _d-flex _flex-column _justify-content-between">
+                <div class="_position-relative">
+
+                  <input class="form-in-phone form-control" name="phone" placeholder="Введите ваш телефон" required=""
+                    type="tel">
+                </div>
+                <div class="err" id="cerror10"></div>
+                <div class="form-button-check form-in-check">
+                  <button class="main-btn" onclick="doLoad10(document.getElementById('addcom10'))">Получите
+                    консультацию<br>
+                    стоматолога + подарок</button>
+                  <div class="form-check">
+                    <input type="checkbox" class="" checked="" id="exampleCheck10">
+                    <label class="form-check-label" for="exampleCheck10">Я принимаю <a href="#security"
+                        class="show-popup"><span>Политика конфиденциальности</span></a></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="thank-block__image">
+        <picture>
+          <source srcset="img/danilov.webp" type="image/webp">
+          <img src="img/danilov.png" alt="">
+        </picture>
+      </div>
+    </div>
+  </div>
+</header>

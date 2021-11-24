@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+a:not([href]):not([class]) {
+
+  &,
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+
+figure {
+  margin: 0 0 1rem;
+}
+
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+
+label {
+  display: inline-block; // 1
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0; // 1
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+select {
+  word-wrap: normal;
+
+  &:disabled {
+    opacity: 1;
+  }
+}
+
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+
+  @if $enable-button-pointers {
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+  }
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
+  padding: 0;
+}
+
+::-webkit-inner-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px; // 1
+  -webkit-appearance: textfield; // 2
+}
+
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+
+::file-selector-button {
+  font: inherit;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+output {
+  display: inline-block;
+}
+
+iframe {
+  border: 0;
+}
+
+summary {
+  display: list-item; // 1
+  cursor: pointer;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+
+[hidden] {
+  display: none !important;
+}

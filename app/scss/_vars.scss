@@ -1,0 +1,12 @@
+$black: #0f0e25;
+$gray: rgb(#0f0e25, 0.5);
+$green: #00beb4;
+
+$enable-button-pointers: true !default;
+
+%overflow {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+}

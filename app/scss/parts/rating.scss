@@ -1,0 +1,223 @@
+.rating {
+  padding-top: 105px;
+  padding-bottom: 120px;
+
+  &-tittle {
+    .line {
+      top: 27px;
+      right: 154px;
+      z-index: -1;
+    }
+
+    margin-bottom: 35px;
+  }
+
+  &-subtittle {
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid rgb($black, 0.1);
+    width: 627px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__reviews-block {
+    display: flex;
+    justify-content: space-between;
+
+    &-left {
+      width: 646px;
+      height: 346px;
+      box-shadow: 0 30px 60px rgba(29, 29, 56, 0.05);
+      border-radius: 24px;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-right {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-image {
+        width: 526px;
+        height: 245px;
+        box-shadow: 0 30px 60px rgba(29, 29, 56, 0.05);
+        border-radius: 24px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &-open {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: rgb($black, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 396px;
+    height: 76px;
+    border-radius: 38px;
+    border: 1px solid rgb(#000000, 0.2);
+    transition: color .15s ease-in-out,
+      background-image .15s ease-in-out,
+      border-color .15s ease-in-out,
+      box-shadow .15s ease-in-out;
+
+    svg {
+      margin-left: 14px;
+      opacity: 0.3;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      background-image: linear-gradient(to top, #ffa257 0%, #ffb980 100%);
+      border: transparent;
+      color: #ffffff;
+    }
+
+    &:hover svg {
+      opacity: 1;
+      fill: #fff;
+    }
+
+    &:active {
+      background-color: #ff9a47;
+      border: transparent;
+      color: #ffffff;
+    }
+  }
+
+  @include _1400 {
+    &__reviews-block-left {
+      width: 560px;
+    }
+  }
+
+  @include _1200 {
+    &__reviews-block {
+      flex-direction: column;
+
+      &-left {
+        width: 646px;
+        margin-bottom: 30px;
+      }
+
+      &-right {
+        &-image {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  @include _768 {
+    .line {
+      display: none;
+    }
+
+    &-subtittle {
+      width: 100%;
+      font-size: 20px;
+    }
+
+    &__reviews-block {
+
+      &-left,
+      &-right {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-left {
+        padding: 0 30px;
+        height: 300px;
+      }
+    }
+
+    &-open {
+      img {
+        width: unset !important;
+      }
+    }
+  }
+
+  @include _576 {
+    &__reviews-block-left {
+      height: auto;
+      padding: 30px 20px;
+    }
+
+    &-subtittle {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    &__reviews-block-right-image {
+      width: 100%;
+
+      img {
+        width: 80%;
+        margin-left: 28px;
+      }
+    }
+  }
+
+  @include _460 {
+    padding-top: 70px;
+
+    &-subtittle {
+      p {
+        font-size: 15px;
+      }
+    }
+
+    &-open {
+      width: 100%;
+    }
+  }
+
+  @include _410 {
+
+
+    &-subtittle {
+      padding: 0 20px;
+      text-align: center;
+
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    &__reviews-block-right-image {
+      width: 100%;
+      height: auto;
+      padding: 20px 20px;
+
+      img {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+}

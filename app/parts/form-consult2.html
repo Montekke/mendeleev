@@ -1,0 +1,61 @@
+<section class="form-consultation _position-relative">
+  <div class="container">
+    <div class="form-consultation-inner">
+      <h3 class="form-consultation__title _position-relative">Получите <strong>рекомендации<br>
+          о подходящих вам имплантах<br>
+          от стоматолога по телефону</strong><br>
+        в течение 10 минут
+        <div class="line _position-absolute">
+          <picture>
+            <source srcset="img/line.webp" type="image/webp">
+            <img src="img/line.png" alt="">
+          </picture>
+        </div>
+      </h3>
+      <p class="form-consultation__subtitle _position-relative"><span>+ подарок:</span> бесплатное первичное<br>
+        обследование в клинике M-DENT
+        <picture class="present">
+          <source srcset="img/present.webp" type="image/webp">
+          <img src="img/present.png" alt="">
+        </picture>
+      </p>
+      <form class="needs-validation" novalidate="" method="POST" action="#" enctype="multipart/form-data" name="addcom2"
+        id="addcom2" onsubmit="return false">
+        <div class="form-in">
+          <input name="from" type="hidden" value="Получите бесплатную консультацию стоматолога + подарок">
+          <div class="form-block-input form-in-input _d-flex _flex-column _justify-content-between">
+            <div class="_position-relative">
+
+              <input class="form-in-phone form-control" name="phone" placeholder="Введите ваш телефон" required=""
+                type="tel">
+            </div>
+            <div class="err" id="cerror2"></div>
+            <div class="form-button-check form-in-check">
+              <button class="main-btn" onclick="doLoad2(document.getElementById('addcom2'))">Получите консультацию<br>
+                стоматолога + подарок</button>
+              <div class="form-check">
+                <input type="checkbox" class="" checked="" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Я принимаю <a href="#security"
+                    class="show-popup"><span>Политика конфиденциальности</span></a></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="form-consultation__image nikolaev _position-absolute">
+      <picture>
+        <source srcset="img/reliability/nikolaev.webp" type="image/webp">
+        <img src="img/reliability/nikolaev.png" alt="">
+      </picture>
+    </div>
+    <div class="form-consultation-info">
+      <div class="form-consultation-info__name">Василий<br>
+        Николаев
+      </div>
+      <div class="form-consultation-info__position">
+        Стомалог-ортопед
+      </div>
+    </div>
+  </div>
+</section>

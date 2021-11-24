@@ -1,0 +1,141 @@
+.economy {
+  padding-top: 105px;
+  padding-bottom: 110px;
+
+  &-tittle {
+    margin-bottom: 35px;
+  }
+
+  &-subtittle {
+    margin-top: 11px;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .line {
+    position: absolute;
+    bottom: -22px;
+    right: 397px;
+    z-index: -1;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &-item {
+      &:nth-child(3) {
+        margin-bottom: 32px;
+      }
+
+      &-tittle {
+        margin-top: 22px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+      }
+
+      &-subtittle {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  @include _1200 {
+    &__block-item {
+      width: 32%;
+
+      img {
+        width: 100%;
+      }
+
+      &-tittle {
+        font-size: 24px;
+
+        br {
+          display: none;
+        }
+      }
+
+      &-subtittle {
+        font-size: 16px;
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .line {
+      display: none;
+    }
+  }
+
+  @include _992 {
+    &__block {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &-item {
+        width: 100%;
+
+        picture {
+          position: relative;
+          right: -180px;
+        }
+
+        img {
+          width: unset;
+        }
+
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @include _768 {
+    &__block-item {
+
+      picture {
+        position: relative;
+        right: -110px;
+      }
+    }
+  }
+
+  @include _576 {
+    &__block-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      picture {
+        position: unset;
+      }
+    }
+  }
+
+  @include _460 {
+    padding-bottom: 70px;
+  }
+
+  @include _410 {
+
+
+    &__block-item {
+      &-tittle {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}

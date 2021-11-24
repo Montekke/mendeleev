@@ -1,0 +1,145 @@
+.dentists-group {
+  padding-top: 95px;
+  padding-bottom: 124px;
+
+  .info {
+    position: absolute;
+    background-image: url('../img/info.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #00beb4;
+    bottom: 26px;
+    right: 22px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.2s;
+
+  }
+
+  .rev h2 {
+    font-weight: 400;
+  }
+
+  &__block {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__block-item {
+    margin-bottom: 30px;
+    position: relative;
+
+    &:hover .info {
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 15px 29px 2px rgba(0, 190, 180, 0.15),
+        inset 0 8px 18px rgba(255, 255, 255, 0.5);
+      background-color: #00beb4;
+    }
+
+  }
+
+  &__contacts {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__contacts-callback {
+    border-radius: 50px;
+    border: 1px solid rgb(#19151e, 0.1);
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 100px;
+
+    img {
+      margin-top: -5px;
+      margin-right: 14px;
+    }
+
+    a {
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+
+  .main-btn {
+    margin-right: 30px;
+  }
+
+  @include _1400 {
+    &__block-item {
+      width: 270px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @include _1200 {
+    .container {
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      padding-left: 15px;
+    }
+
+    &__block {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      margin-top: 15px;
+
+      &-item {
+        min-width: 285px;
+        margin-right: 20px;
+      }
+    }
+
+    &__contacts,
+    h2 {
+      padding-right: var(--bs-gutter-x, 0.75rem);
+    }
+  }
+
+  @include _992 {
+    &__contacts {
+      flex-direction: column;
+
+      .main-btn {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include _768 {
+    padding-bottom: 20px;
+  }
+
+  @include _576 {
+    &__contacts-callback {
+      width: 100%;
+      flex-direction: column;
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  @include _460 {
+    .main-btn {
+      margin-right: 0;
+    }
+  }
+}

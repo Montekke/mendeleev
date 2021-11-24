@@ -1,0 +1,241 @@
+.placement {
+  padding-top: 105px;
+  padding-bottom: 120px;
+
+  &-tittle {
+    &:last-of-type {
+      padding-top: 77px;
+    }
+  }
+
+  .line {
+    position: absolute;
+    left: 187px;
+    top: 29px;
+    z-index: -1;
+  }
+
+  &__implant-block {
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 55px;
+  }
+
+  &__text-block {
+    position: absolute;
+    top: 140px;
+    left: 98px;
+
+    &-tittle {
+      font-size: 34px;
+      line-height: 42px;
+      font-weight: 600;
+      margin-bottom: 23px;
+    }
+
+    &-list {
+      font-size: 20px;
+      margin-left: 67px;
+      margin-bottom: 10px;
+      position: relative;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url('../img/placement/galka.png');
+        width: 26px;
+        height: 26px;
+        left: -40px;
+        top: 0;
+      }
+    }
+  }
+
+  &__anesthesia-block {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      position: relative;
+      margin-top: 37px;
+    }
+
+    &-text {
+      position: absolute;
+      top: 52px;
+      left: 38px;
+    }
+
+    &-tittle {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 600;
+    }
+
+    &-subtittle {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-top: 7px;
+    }
+  }
+
+  @include _1400 {
+    &__anesthesia-block-item {
+      width: 49%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @include _1200 {
+    &__anesthesia-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-item {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        img {
+          width: unset;
+        }
+      }
+
+      &-text {
+        left: 202px;
+      }
+    }
+  }
+
+  @include _992 {
+    &__anesthesia-block {
+
+      &-text {
+        left: 92px;
+      }
+    }
+  }
+
+  @include _768 {
+    &__implant-block {
+      flex-direction: column-reverse;
+      display: flex;
+
+      picture {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &__text-block {
+      &-tittle {
+        font-size: 28px;
+        line-height: 38px;
+      }
+
+      position: unset;
+      padding: 30px;
+    }
+
+    &__anesthesia-block {
+      &-subtittle {
+        font-size: 16px;
+      }
+
+      &-item {
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-text {
+        left: 26px;
+        top: 43px;
+
+        h3 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  @include _576 {
+    .line {
+      display: none;
+    }
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &__implant-block {
+      margin-top: 35px;
+    }
+
+    &__text-block {
+      padding: 20px;
+
+      &-tittle {
+        font-size: 24px;
+        line-height: 34px;
+      }
+
+      &-list {
+        font-size: 18px;
+      }
+    }
+
+    &__anesthesia-block {
+      &-item {
+        flex-direction: column-reverse;
+      }
+
+      &-text {
+        margin-bottom: 20px;
+        position: unset;
+      }
+    }
+  }
+
+  @include _460 {
+    &__text-block-list {
+      margin-left: 40px;
+    }
+  }
+
+  @include _410 {
+    &__implant-block {
+      margin-top: 0px;
+    }
+
+    &__text-block {
+
+
+      &-tittle {
+        margin-bottom: 13px;
+        font-size: 22px;
+        line-height: 32px;
+      }
+
+      &-list {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+
+  }
+}

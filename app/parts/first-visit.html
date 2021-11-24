@@ -1,0 +1,56 @@
+<section class="first-visit">
+
+  <div class="container">
+    <h2 class="first-visit-tittle">
+      <strong>Ждем вас на бесплатное обследование<br>
+        ежедневно</strong> с 10:00 до 21:00 без перерывов
+    </h2>
+    <div class="first-visit-contact">
+      <img src="img/header/phone.svg" alt="">Телефон для записи на прием: <a href="tel:+74994551627">+7 499
+        455-16-27</a>
+    </div>
+  </div>
+  <div class="first-visit__block _position-relative">
+    <div id="map" style=""></div>
+    <div class="first-visit__block-visit">
+      <div class="container">
+        <h3 class="first-visit__block-visit-tittle"><strong>Не забудьте забрать подарок:</strong><br>
+          бесплатное первичное обследование<br>
+          в клинике M-DENT,
+          @include('_line.html')
+          <div class="first-visit__block-visit-subtittle">
+            которым вы можете воспользоваться<br>
+            <span>в течение 14 дней</span>
+          </div>
+        </h3>
+        <form class="needs-validation" novalidate="" method="POST" action="#" enctype="multipart/form-data"
+          name="addcom5" id="addcom5" onsubmit="return false">
+          <div class="form-in">
+            <input name="from" type="hidden" value="Получите бесплатную консультацию стоматолога + подарок">
+            <div class="form-block-input form-in-input _d-flex _flex-column _justify-content-between">
+              <div class="_position-relative">
+
+                <input class="form-in-phone form-control" name="phone" placeholder="Введите ваш телефон" required=""
+                  type="tel">
+              </div>
+              <div class="err" id="cerror5"></div>
+              <div class="form-button-check form-in-check">
+                <button class="main-btn" onclick="doLoad5(document.getElementById('addcom5'))">Получите консультацию<br>
+                  стоматолога + подарок</button>
+                <div class="form-check">
+                  <input type="checkbox" class="" checked="" id="exampleCheck5">
+                  <label class="form-check-label" for="exampleCheck5">Я принимаю <a href="#security"
+                      class="show-popup"><span>Политика конфиденциальности</span></a></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <picture class="present">
+            <source srcset="img/present2.webp" type="image/webp">
+            <img src="img/present2.png" alt="">
+          </picture>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

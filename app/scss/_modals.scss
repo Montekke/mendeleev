@@ -1,0 +1,855 @@
+button.mfp-close {
+  right: -40px;
+  top: -10px;
+  background-image: url('../img/modal/close.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+  font-size: 0;
+
+  &:active {
+    top: -9px;
+  }
+
+  @include _1200 {
+    top: -40px;
+    right: -10px;
+
+    &:active {
+      top: -39px;
+    }
+  }
+}
+
+.mfp-wrap {
+  z-index: 9999;
+}
+
+.stars-slider {
+  z-index: 1000 !important;
+}
+
+.mfp-with-anim {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.bio-popup {
+  background-image: url(../img/cabinet-bg.jpg);
+  background-repeat: no-repeat;
+  width: 1560px;
+
+  .about__image {
+    bottom: -120px;
+    right: 190px;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  @media (max-width:1600px) {
+    width: 100%;
+
+    button.mfp-close {
+      top: -40px;
+      right: -10px;
+
+      &:active {
+        top: -39px;
+      }
+    }
+  }
+
+  @include _1200 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 100%;
+    padding-bottom: 0;
+
+    .about__image {
+      bottom: 0;
+      right: -275px;
+      margin-top: -275px;
+
+      img {
+        width: unset;
+      }
+    }
+
+    .about__video {
+      top: 520px;
+      right: 625px;
+    }
+  }
+
+  @include _992 {
+    .about__image {
+      right: -190px;
+    }
+
+    .about__video {
+      top: 612px;
+      right: auto;
+      left: 15px;
+    }
+  }
+
+  @include _768 {
+    .about__image {
+      position: unset;
+      margin-top: 100px;
+      margin-left: 50px;
+
+      img {
+        width: 90%;
+      }
+    }
+  }
+
+  @include _460 {
+    .about__image {
+      margin-top: 130px;
+    }
+
+    .about__video {
+      top: 580px;
+    }
+  }
+}
+
+#bio7,
+#bio8 {
+  .about__image {
+    bottom: -120px;
+    right: 120px;
+  }
+}
+
+.metro-popup {
+  width: 1340px;
+
+  h2 {
+    z-index: 9;
+  }
+
+  .line {
+    z-index: -1;
+  }
+
+  @include _1400 {
+    width: 100%;
+
+    button.mfp-close {
+      top: -40px;
+      right: -10px;
+
+      &:active {
+        top: -39px;
+      }
+    }
+  }
+
+  .metro__block {
+    padding-bottom: 70px;
+  }
+
+  .consult__block {
+    position: relative;
+    padding-top: 60px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: rgb($black, 0.06);
+      top: 0;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 56px;
+      text-align: center;
+
+      @include _1200 {
+        font-size: 38px;
+        line-height: 48px;
+      }
+
+      @include _992 {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      @include _460 {
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+
+    .first-visit-contact {
+      margin-top: 39px;
+    }
+  }
+}
+
+.callback {
+  width: 920px;
+
+  &__block {
+    display: flex;
+  }
+
+  &__left {}
+
+  &__right {
+    padding-left: 49px;
+    padding-top: 49px;
+  }
+
+  &__tittle {
+    font-size: 38px;
+    line-height: 44px;
+    font-weight: 600;
+  }
+
+  &__subtittle {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  @include _992 {
+    &__left {
+      display: none;
+    }
+
+    width: 500px;
+
+    &__right {
+      margin: 0 auto;
+      padding: 0;
+      padding: 30px;
+    }
+  }
+
+  @include _576 {
+    width: 100%;
+  }
+
+  @include _460 {
+    &__tittle {
+      font-size: 34px;
+      line-height: 44px;
+    }
+  }
+
+  @include _410 {
+    &__tittle {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &__right {
+      width: 330px;
+      padding: 40px 0px;
+    }
+  }
+}
+
+.consult {
+  width: 950px;
+  padding: 54px 60px;
+
+  &__tittle {
+    font-size: 38px;
+    line-height: 44px;
+    font-weight: 400;
+
+  }
+
+  &__subtittle {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-in {
+    margin-top: 29px;
+
+    &-input {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-phone,
+    .main-btn {
+      margin-top: 0;
+    }
+
+    .main-btn {
+      margin-left: 10px;
+    }
+  }
+
+  @include _992 {
+    width: 520px;
+
+    &__tittle {
+      font-size: 28px;
+      line-height: 38px;
+
+      br {
+        display: none;
+      }
+    }
+
+    .form-in-input {
+      flex-direction: column;
+
+      .main-btn {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include _576 {
+    width: 100%;
+    padding: 0;
+    padding: 30px;
+  }
+
+  @include _410 {
+    padding: 40px 10px;
+  }
+}
+
+.way {
+  width: 1100px;
+
+  &-container {
+    padding: 70px;
+  }
+
+  &-info {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 28px;
+  }
+
+  &__tittle-block {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 45px;
+  }
+
+  &__tittle {
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 600;
+    margin-right: 45px;
+
+    @include _1200 {
+      text-align: center;
+    }
+
+  }
+
+  &__subtittle {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .form-consultation {
+    background-image: url('../img/form-bg.jpg');
+    border-radius: 30px;
+    padding-left: 33px;
+    padding-right: 33px;
+
+    &-inner {
+      padding-bottom: 60px;
+    }
+
+    &__title {}
+
+    &__subtitle {}
+
+    &__image {
+      bottom: 0px;
+      right: -80px;
+
+      img {
+        width: 85%;
+      }
+    }
+  }
+
+  @include _1200 {
+    width: 100%;
+
+    &-container {
+      padding: 50px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &__tittle {
+      br {
+        display: none;
+      }
+
+      &-block {
+        flex-direction: column;
+        align-items: center;
+
+        picture {
+          margin-top: 30px;
+        }
+      }
+
+      margin-right: 0;
+    }
+  }
+
+  @include _768 {
+    &__tittle {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+
+  @include _576 {
+    &-container {
+      padding: 30px;
+
+      @include _410 {
+        padding: 40px 10px;
+      }
+    }
+
+    &__tittle {
+      font-size: 26px;
+      line-height: 36px;
+
+      br {
+        display: none;
+      }
+
+    }
+
+    &-info {
+      br {
+        display: none;
+      }
+    }
+  }
+
+
+}
+
+.way2 {
+
+  &__tittle {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  &__block {
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h4 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 17px;
+      }
+
+      p {
+        line-height: 26px;
+      }
+    }
+  }
+
+  @include _1200 {
+    &-container {
+      padding: 50px;
+    }
+  }
+
+  @include _992 {
+    &__tittle {
+      br {
+        display: none;
+      }
+    }
+
+    &__block-item {
+      flex-direction: column;
+
+      picture {
+        margin-top: 30px;
+      }
+
+      &:nth-child(2) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .text__block {
+
+      h4,
+      p {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include _460 {
+    &__tittle {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+}
+
+#way3 {
+  @include _768 {
+    .text__block {
+      margin-top: 30px;
+    }
+
+    .way2__tittle {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+
+  @include _576 {
+    .way2__tittle {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+
+  @include _410 {
+    .way2__tittle {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+}
+
+.sertificate-popup {
+  width: 760px;
+  padding: 80px;
+
+  &__tittle {
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 600;
+  }
+
+  &__subtittle {
+    font-size: 18px;
+    color: rgb($black, 0.6);
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .bio__block {
+    &-tittle {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .video__block {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .round {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 20px 51px 9px rgba(0, 190, 180, 0.15),
+      inset 0 10px 20px rgba(255, 255, 255, 0.5);
+    background-color: #00beb4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+
+    &:hover {
+      box-shadow: 0 20px 51px 9px rgba(0, 190, 180, 0.15),
+        inset 0 10px 20px rgba(255, 255, 255, 0.5);
+      background-color: #00d1c0;
+    }
+
+    &:active {
+      background-color: #00beb4;
+    }
+  }
+
+  .arrows2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    font-weight: 600;
+
+    div {
+      margin: 0 20px;
+    }
+  }
+
+  .slick-arrow {
+    width: 54px;
+    height: 54px;
+    border: 1px solid rgb($black, 0.1);
+    background-image: url('../img/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    font-size: 0;
+  }
+
+  .slick-prev {
+    transform: rotate(180deg);
+  }
+
+  .main-btn {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  @include _768 {
+    width: 100%;
+    padding: 30px;
+
+    .video__block {
+      picture {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @include _576 {
+    .single-sert {
+      .slick-list .slick-slide {
+        height: 0 !important;
+      }
+
+      .slick-list .slick-active {
+        height: auto !important;
+      }
+
+      &-item {
+        padding: 0 50px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @include _410 {
+    padding: 40px 10px;
+
+    .round {
+      width: 80px;
+      height: 80px;
+      top: 80px;
+    }
+  }
+}
+
+.rating-popup {
+  width: 1200px;
+  padding: 70px 50px;
+
+  .review__block {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include _1400 {
+    button.mfp-close {
+      top: -40px;
+      right: -10px;
+
+      &:active {
+        top: -39px;
+      }
+    }
+
+    width: 100%;
+  }
+
+  @include _1200 {
+    .review__block {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.security {
+  width: 840px;
+
+  &__container {
+    padding: 50px;
+  }
+
+  &__tittle {
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  @include _992 {
+    width: 100%;
+  }
+
+  @include _460 {
+    &__container {
+      padding: 30px 20px;
+    }
+  }
+}
+
+
+.mfp-content {
+  padding-top: 40px;
+
+  @include _1200 {
+    .form-consultation {
+      background-size: cover;
+    }
+  }
+
+  @include _576 {
+    .form-consultation {
+      &-inner {
+        padding-left: 0;
+      }
+
+      .form-in-input {
+        width: 100%;
+
+        input {
+          width: 100%;
+        }
+
+        .main-btn {
+          width: 100%;
+
+          &::after,
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @include _460 {
+    .form-consultation {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      &__image {
+        margin-top: 110px;
+        margin-left: 15px !important;
+      }
+    }
+  }
+}
+
+.kirguev-popup {
+  width: 1360px;
+  background-image: url('../img/form-bg.jpg');
+  background-size: cover;
+
+  @include _1400 {
+    width: 100%;
+
+    button.mfp-close {
+      top: -40px;
+      right: -10px;
+
+      &:active {
+        top: -39px;
+      }
+    }
+  }
+
+  @include _576 {
+    .form-consultation-info {
+      top: 625px;
+    }
+  }
+
+  @include _460 {
+    .form-consultation__image {
+      margin-top: 175px;
+      margin-left: -8px !important;
+    }
+
+    .form-consultation-info {
+      top: 718px;
+      right: 0;
+    }
+  }
+
+  @include _410 {
+    .form-consultation-info {
+      top: 666px;
+    }
+  }
+}
